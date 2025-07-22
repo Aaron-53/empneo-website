@@ -1,1 +1,18 @@
 @import "tailwindcss";
+
+
+@font-face {
+  font-family: 'MyFont';
+  src: url('/src/assets/fonts/Runavess\ Demo.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.gradient-border {
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 15px;
+  border-image: linear-gradient(91.94deg, #D49C3E -0.32%, #DCAD5E 100%) 1;
+  background-color: transparent;
+  background-clip: padding-box;
+}
