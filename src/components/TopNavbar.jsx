@@ -18,7 +18,7 @@ function TopNavbar() {
         <img
                 src={logo}
                 alt="Empneo Logo"
-                className="w-28 h-auto z-10" // Adjust size and styling as needed
+                className="w-12 h-auto z-10 m-2" // Adjust size and styling as needed
               />
       </div>
       
