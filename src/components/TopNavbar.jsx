@@ -2,7 +2,7 @@ import React from 'react'
 
 function TopNavbar() {
   return (
-    <div>TopNavbar</div>
+    <div></div>
   )
 }
 

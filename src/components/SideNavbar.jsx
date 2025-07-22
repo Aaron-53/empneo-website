@@ -1,33 +1,26 @@
 import React from 'react'
 import SideNavbar from './SideNavbar'
 
-function App() {
+function SideNavbar() {
   return (
-    <div className="h-screen overflow-y-scroll scroll-smooth snap-y snap-mandatory">
-      <SideNavbar />
-      
-      <section
-        id="hero-section"
-        className="min-h-screen snap-start flex items-center justify-center bg-red-100"
-      >
-        <h1 className="text-4xl">Hero Section</h1>
-      </section>
-
-      <section
-        id="about-section"
-        className="min-h-screen snap-start flex items-center justify-center bg-green-100"
-      >
-        <h1 className="text-4xl">About Section</h1>
-      </section>
-
-      <section
-        id="gallery-section"
-        className="min-h-screen snap-start flex items-center justify-center bg-blue-100"
-      >
-        <h1 className="text-4xl">Gallery Section</h1>
-      </section>
+    <div className="fixed left-4 top-1/2 -translate-y-1/2 flex flex-col z-50 justify-around h-1/2">
+      <button
+        aria-label="Scroll to Hero"
+        className="w-2 h-2 bg-[#d49c3e] hover:bg-[#a87d36] transition transform rotate-45"
+        onClick={() => softScrollToSection('hero-section')}
+      />
+      <button
+        aria-label="Scroll to About"
+        className="w-2 h-2 bg-[#d49c3e] hover:bg-[#a87d36] transition transform rotate-45"
+        onClick={() => softScrollToSection('about-section')}
+      />
+      <button
+        aria-label="Scroll to Gallery"
+        className="w-2 h-2 bg-[#d49c3e] hover:bg-[#a87d36] transition transform rotate-45"
+        onClick={() => softScrollToSection('gallery-section')}
+      />
     </div>
   )
 }
 
-export default App
+export default SideNavbar
