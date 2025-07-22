@@ -75,15 +75,13 @@ function App() {
           isExpanding ? "opacity-0 scale-110" : "opacity-100 scale-100"
         }`}
       >
-        <div className="text-center">
-            <button
-              onClick={handleStartReveal}
-              disabled={isExpanding}
-              className="w-[609px] h-[107px] opacity-100 rounded-[15px] gradient-border text-[64px] text-[#D49C3E] text-center font-[MyFont]"
-            >
-              The Prophecy Unfolds...
-            </button>
-        </div>
+        <button
+          onClick={handleStartReveal}
+          disabled={isExpanding}
+          className="w-[609px] h-[107px] opacity-100 rounded-[15px] gradient-border text-[64px] text-[#D49C3E] text-center font-[MyFont] flex items-center justify-center"
+        >
+          The Prophecy Unfolds...
+        </button>
       </div>
 
       {/* Expanding ring effects */}
