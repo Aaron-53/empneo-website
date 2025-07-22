@@ -35,7 +35,7 @@ export default function EmpneoAcceptanceLetter({
             {/* Crest or Logo */}
             <div className="flex-shrink-0">
               {customLogo || empneoLogo ? (
-                <div className="w-32 h-40 flex items-center justify-center bg-white/90 backdrop-blur-sm rounded-lg border-2 border-amber-900 shadow-xl p-2">
+                <div className="w-32 h-40 flex items-center justify-center">
                   <img
                     src={customLogo || empneoLogo}
                     alt="Empneo Logo"
