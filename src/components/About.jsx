@@ -17,6 +17,8 @@ export default function EmpneoAcceptanceLetter({
       };
 
   return (
+    <div className="w-[100vw] h-[100vh] flex items-center justify-center" id='about-section'>
+      About
     <div
       className="min-h-screen p-8 flex items-center justify-center relative"
       style={backgroundStyle}
