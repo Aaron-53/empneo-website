@@ -5,6 +5,7 @@ import Hero from "./components/Hero";
 import About from "./components/About";
 import Gallery from "./components/Gallery";
 import Herobg from "./assets/empneobgbtr.jpg"; 
+import TopNavbar from "./components/TopNavbar";
 import Footer from "./components/Footer";
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
   if (!isLoading) {
     return (
       <div className="App overflow-x-hidden">
+        <TopNavbar />
         <Hero />
         <About />
         <Gallery />
