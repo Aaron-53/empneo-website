@@ -5,6 +5,7 @@ import Hero from "./components/Hero";
 import About from "./components/About";
 import Gallery from "./components/Gallery";
 import Herobg from "./assets/empneobgbtr.jpg"; 
+import Footer from "./components/Footer";
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -24,6 +25,7 @@ function App() {
         <Hero />
         <About />
         <Gallery />
+        <Footer />
       </div>
     );
   }
@@ -52,6 +54,7 @@ function App() {
           <Hero />
           <About />
           <Gallery />
+          <Footer />
         </div>
       </div>
 
