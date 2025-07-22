@@ -1,6 +1,5 @@
 import React from 'react'
-import SideNavbar from './SideNavbar'
-
+ 
 function SideNavbar() {
   return (
     <div className="fixed left-4 top-1/2 -translate-y-1/2 flex flex-col z-50 justify-around h-1/2">
