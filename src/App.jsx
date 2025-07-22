@@ -4,7 +4,7 @@ import { useState } from "react";
 import Hero from "./components/Hero";
 import About from "./components/About";
 import Gallery from "./components/Gallery";
-import Herobg from "./assets/empneobg.png";
+import Herobg from "./assets/empneobgbtr.jpg"; 
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -15,7 +15,7 @@ function App() {
     // Complete the reveal after animation
     setTimeout(() => {
       setIsLoading(false);
-    }, 3000); // Match the animation duration
+    }, 5000); // Match the animation duration
   };
 
   if (!isLoading) {
@@ -30,16 +30,16 @@ function App() {
 
   return (
     <div
-      className="relative w-full h-screen overflow-hidden"
-      style={{
-        backgroundImage: `url(${Herobg})`,
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-      }}
+      className="relative w-full h-screen overflow-hidden bg-black"
+      // style={{
+      //   backgroundImage: `url(${Herobg})`,
+      //   backgroundSize: "cover",
+      //   backgroundPosition: "center",
+      // }}
     >
       {/* Components visible only in the expanding circular area */}
       <div
-        className={`absolute inset-0 transition-all duration-2000 ease-out ${
+        className={`absolute inset-0 transition-all duration-[10s] ease-out ${
           isExpanding ? "opacity-100" : "opacity-100"
         }`}
         style={{
