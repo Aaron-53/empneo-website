@@ -84,9 +84,15 @@ function App() {
         <button
           onClick={handleStartReveal}
           disabled={isExpanding}
-          className="w-full max-w-[320px] sm:max-w-[400px] md:max-w-[500px] lg:max-w-[609px] h-[80px] sm:h-[90px] md:h-[100px] lg:h-[107px] opacity-100 rounded-[15px] gradient-border text-[32px] sm:text-[40px] md:text-[52px] lg:text-[64px] text-[#D49C3E] text-center font-[MyFont] flex items-center justify-center"
+          className="relative  opacity-100 rounded-[15px] text-[32px] sm:text-[40px] md:text-[52px] lg:text-[64px] text-center flex items-center justify-center
+          bg-gradient-to-r from-yellow-600 via-amber-500 to-yellow-600 p-[3px]
+          hover:from-yellow-500 hover:via-amber-400 hover:to-yellow-500 
+          transition-all duration-300 transform hover:scale-105"
+          style={{ fontFamily: "MyFont, Arial, sans-serif" }}
         >
-          The Prophecy Unfolds...
+          <span className="flex items-center justify-center w-full h-full bg-black rounded-[12px] px-4 text-yellow-500">
+            Click to unfold the prophecy...
+          </span>
         </button>
       </div>
 
