@@ -4,7 +4,7 @@ import { useState } from "react";
 import Hero from "./components/Hero";
 import About from "./components/About";
 import Gallery from "./components/Gallery";
-import Herobg from "./assets/empneobgbtr.jpg"; 
+import Herobg from "./assets/empneobgbtr.jpg";
 import TopNavbar from "./components/TopNavbar";
 import Footer from "./components/Footer";
 
@@ -17,7 +17,7 @@ function App() {
     // Complete the reveal after animation
     setTimeout(() => {
       setIsLoading(false);
-    }, 5000); // Match the animation duration
+    }, 1500); // Match the animation duration
   };
 
   if (!isLoading) {
@@ -43,7 +43,7 @@ function App() {
     >
       {/* Components visible only in the expanding circular area */}
       <div
-        className={`absolute inset-0 transition-all duration-[10s] ease-out ${
+        className={`absolute inset-0 transition-all duration-[3s] ease-out ${
           isExpanding ? "opacity-100" : "opacity-100"
         }`}
         style={{
@@ -53,6 +53,7 @@ function App() {
         }}
       >
         <div className="App overflow-x-hidden">
+          <TopNavbar />
           <Hero />
           <About />
           <Gallery />
@@ -76,14 +77,14 @@ function App() {
 
       {/* Center button */}
       <div
-        className={`absolute inset-0 flex items-center justify-center z-40 transition-all duration-500 ${
+        className={`absolute inset-0 flex items-center justify-center z-40 transition-all duration-500 px-4 sm:px-6 md:px-8 ${
           isExpanding ? "opacity-0 scale-110" : "opacity-100 scale-100"
         }`}
       >
         <button
           onClick={handleStartReveal}
           disabled={isExpanding}
-          className="w-[609px] h-[107px] opacity-100 rounded-[15px] gradient-border text-[64px] text-[#D49C3E] text-center font-[MyFont] flex items-center justify-center"
+          className="w-full max-w-[320px] sm:max-w-[400px] md:max-w-[500px] lg:max-w-[609px] h-[80px] sm:h-[90px] md:h-[100px] lg:h-[107px] opacity-100 rounded-[15px] gradient-border text-[32px] sm:text-[40px] md:text-[52px] lg:text-[64px] text-[#D49C3E] text-center font-[MyFont] flex items-center justify-center"
         >
           The Prophecy Unfolds...
         </button>

@@ -18,90 +18,70 @@ export default function EmpneoAcceptanceLetter({
 
   return (
     <div
-      className="relative w-screen h-screen "
+      className="relative w-screen min-h-screen flex flex-col items-center justify-center px-4 sm:px-6 md:px-8 lg:px-12 py-8"
       id="about-section"
       style={backgroundStyle}
     >
-      {/* Overlay */}
-      <div className="absolute inset-0 bg-black/20 z-0" />
+      <div className="max-w-7xl mx-auto text-[#6d2d00] font-[MyFont] w-full">
+        {/* Centered Heading */}
+        <div className="text-center mb-8 sm:mb-10 md:mb-12 mt-14">
+          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-4">
+            The Prophecy Unfolds...
+          </h1>
+        </div>
 
-      <div className="absolute inset-0 flex items-center justify-center p-8 z-10">
-        <div className="max-w-2xl w-full">
-          {/* Header */}
-          <div className="text-center mb-8">
-            <h1 className="text-4xl font-bold text-white mb-4 tracking-wider drop-shadow-lg">
-              THE PROPHECY UNFOLDS...
-            </h1>
+        {/* Two Column Layout */}
+        <div className="flex flex-col lg:flex-row items-center lg:items-start gap-6 sm:gap-8 md:gap-10 lg:gap-12 xl:gap-16">
+          {/* Left Column - Logo */}
+          <div className="flex-shrink-0 order-2 lg:order-1">
+            <img
+              src={empneoLogo}
+              alt="Empneo Logo"
+              className="w-[150px] sm:w-[180px] md:w-[220px] lg:w-[280px] xl:w-[320px] object-contain mx-auto"
+            />
           </div>
 
-          {/* Main content */}
-          <div className="flex items-start gap-8 mb-8">
-            {/* Crest or Logo */}
-            <div className="flex-shrink-0">
-              {customLogo || empneoLogo ? (
-                <div className="w-32 h-40 flex items-center justify-center">
-                  <img
-                    src={customLogo || empneoLogo}
-                    alt="Empneo Logo"
-                    className="max-w-full max-h-full object-contain rounded-lg"
-                  />
-                </div>
-              ) : (
-                <div className="w-32 h-40 bg-gradient-to-br from-amber-600 to-amber-800 rounded-lg shadow-xl flex flex-col items-center justify-center border-4 border-amber-900 relative overflow-hidden">
-                  <div className="absolute top-2 left-1/2 transform -translate-x-1/2 bg-yellow-400 text-amber-900 px-3 py-1 rounded-full text-xs font-bold border border-amber-700 shadow-md">
-                    EMPNEO 9.0
-                  </div>
-                  <div className="w-20 h-24 bg-gradient-to-br from-yellow-400 to-amber-500 border-2 border-amber-900 flex items-center justify-center mt-4 relative shadow-inner">
-                    <div className="text-3xl font-bold text-amber-900">E</div>
-                    <div className="absolute top-1 left-1 w-2 h-2 bg-amber-900 rounded-full" />
-                    <div className="absolute top-1 right-1 w-2 h-2 bg-amber-900 rounded-full" />
-                    <div className="absolute bottom-1 left-1 w-2 h-2 bg-amber-900 rounded-full" />
-                    <div className="absolute bottom-1 right-1 w-2 h-2 bg-amber-900 rounded-full" />
-                  </div>
-                  <div className="absolute bottom-1 left-1/2 transform -translate-x-1/2 bg-yellow-400 text-amber-900 px-2 py-0.5 rounded text-xs font-semibold border border-amber-700 w-28 text-center shadow-md">
-                    <div>INCANI</div>
-                    <div className="text-xs">PER SCIENTIAM</div>
-                    <div>CRES!</div>
-                  </div>
-                </div>
-              )}
-            </div>
+          {/* Right Column - Message */}
+          <div className="flex-1 text-sm sm:text-base md:text-lg lg:text-xl leading-relaxed space-y-3 sm:space-y-4 order-1 lg:order-2 text-center lg:text-left">
+            <p className="text-lg sm:text-xl md:text-2xl font-medium mb-2">
+              Model Engineering Castle
+            </p>
+            <p className="text-2xl sm:text-2xl md:text-4xl font-medium mb-4 ">
+              Dear Witch/Wizard,
+            </p>
+            <p className="text-xl sm:text-2xl md:text-4xl font-medium mb-4">
+              We are pleased to inform you that you have been accepted to attend{" "}
+              <strong>Empneo 9.0</strong>, the annual wizarding tech conclave
+              hosted by <strong>IEEE MEC SB</strong>. Taking place on
+              <strong> August 9 & 10</strong>, happening within the ancient
+              halls of MEC.
+            </p>
 
-            {/* Letter content */}
-            <div className="flex-1 bg-white/95 backdrop-blur-sm p-6 rounded-lg border border-amber-200 shadow-xl">
-              <div className="mb-6">
-                <div className="text-amber-900 font-bold text-lg mb-2">
-                  MODEL ENGINEERING CASTLE
-                  <br />
-                  DEAR WITCH/WIZARD.
-                </div>
-              </div>
+            <p className="text-xl sm:text-2xl md:text-4xl font-medium mb-4">
+              To seal your admission, you must complete your registration
+              through the magic portal:
+              <a
+                href="https://bit.ly/EMPNEO9"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline hover:opacity-80 ml-1 transition-opacity inline-block"
+              >
+                REGISTER HERE
+              </a>
+            </p>
 
-              <div className="text-amber-900 space-y-4 leading-relaxed">
-                <p>
-                  WE ARE PLEASED TO INFORM YOU THAT YOU HAVE BEEN ACCEPTED TO
-                  ATTEND EMPNEO 9.0, THE ANNUAL WIZARDING TECH CONCLAVE HOSTED
-                  BY IEEE MEC SB, TAKING PLACE ON AUGUST 9 & 10 HAPPENING WITHIN
-                  THE ANCIENT HALLS OF MEC.
-                </p>
-                <p>
-                  TO SEAL YOUR ADMISSION, YOU MUST COMPLETE YOUR REGISTRATION
-                  THROUGH THE MAGIC PORTAL : LINKLINK.COM
-                </p>
-                <p className="font-semibold">
-                  WANDS AT THE READY. THE PROPHECY IS ABOUT TO UNFOLD.
-                </p>
-              </div>
+            <p className="text-2xl sm:text-2xl md:text-4xl font-medium mb-4">
+              Wands at the ready. The prophecy is about to unfold.
+            </p>
 
-              <div className="mt-8 text-amber-900">
-                <div className="font-semibold">
-                  YOURS SINCERELY,
-                  <br />
-                  IEEE MEC SB
-                  <br />
-                  MAGICAL AFFAIRS DIVISION
-                </div>
-              </div>
+            <div className="mt-6 sm:mt-8">
+              <p>
+                Yours sincerely,
+                <br />
+                <strong>IEEE MEC SB</strong>
+                <br />
+                Magical Affairs Division
+              </p>
             </div>
           </div>
         </div>
