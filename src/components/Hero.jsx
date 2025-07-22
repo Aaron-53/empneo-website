@@ -14,11 +14,30 @@ function Hero() {
       }}>
       <TopNavbar />
       <SideNavbar />
-      <img
-        src={logo}
-        alt="Empneo Logo"
-        className="w-48 h-auto z-10" // Adjust size and styling as needed
-      />
+      <div className="flex flex-col items-center">
+  <div className="flex items-center space-x-6">
+    <img
+      src={logo}
+      alt="Empneo Logo"
+      className="w-16 h-auto z-10 hover:scale-110 transition-transform duration-300"
+    />
+    <img
+      src={logo}
+      alt="Empneo Logo"
+      className="w-16 h-auto z-10 hover:scale-110 transition-transform duration-300"
+    />
+    <img
+      src={logo}
+      alt="Empneo Logo"
+      className="w-16 h-auto z-10 hover:scale-110 transition-transform duration-300"
+    />
+  </div>
+  <img
+    src={logo}
+    alt="Real Empneo Logo"
+    className="w-90 h-auto z-10 -mt-24"
+  />
+</div>
   
     </div>
   );
