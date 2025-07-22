@@ -17,7 +17,11 @@ export default function EmpneoAcceptanceLetter({
       };
 
   return (
-    <div className="relative w-screen h-screen" style={backgroundStyle}>
+    <div
+      className="relative w-screen h-screen "
+      id="about-section"
+      style={backgroundStyle}
+    >
       {/* Overlay */}
       <div className="absolute inset-0 bg-black/20 z-0" />
 
