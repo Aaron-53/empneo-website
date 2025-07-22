@@ -4,7 +4,7 @@ import { useState } from "react";
 import Hero from "./components/Hero";
 import About from "./components/About";
 import Gallery from "./components/Gallery";
-import Herobg from "./assets/empneobg.png";
+import Herobg from "./assets/empneobgbtr.jpg";
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
