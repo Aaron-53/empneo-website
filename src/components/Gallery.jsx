@@ -13,7 +13,7 @@ const bottomRow = [img4, img5, img6];
 function Gallery() {
   return (
     <div
-      className="w-screen h-screen bg-cover bg-center flex flex-col items-center justify-center gap-8 py-6 overflow-hidden"
+      className="w-screen h-screen bg-cover bg-center flex flex-col items-center justify-center gap-8 py-6 pt-[100px] overflow-hidden"
       id="gallery-section"
       style={{ backgroundImage: `url(${Herobg})` }}
     >
@@ -22,29 +22,30 @@ function Gallery() {
       </h1>
 
       {/* Top Scrolling Row */}
-      <div className="w-full overflow-hidden">
-        <div className="flex gap-8 animate-scroll-right min-w-max will-change-transform">
+      <div className="w-full h-[30%]">
+        <div className="flex h-full gap-8 animate-scroll-right min-w-max will-change-transform">
           {[...topRow, ...topRow, ...topRow, ...topRow].map((src, idx) => (
             <img
               key={`top-${idx}`}
               src={src}
               alt={`Top ${idx}`}
-              className="h-[350px] object-contain flex-shrink-0"
+              className="h-full w-auto object-contain"
             />
           ))}
         </div>
       </div>
 
+
       {/* Bottom Scrolling Row */}
-      <div className="w-full overflow-hidden">
-        <div className="flex gap-8 animate-scroll-left min-w-max will-change-transform">
+      <div className="w-full h-[30%]">
+        <div className="flex gap-8 h-full animate-scroll-left min-w-max will-change-transform">
           {[...bottomRow, ...bottomRow, ...bottomRow, ...bottomRow].map(
             (src, idx) => (
               <img
                 key={`bottom-${idx}`}
                 src={src}
                 alt={`Bottom ${idx}`}
-                className="h-[350px] object-contain flex-shrink-0"
+                className="h-full object-contain flex-shrink-0"
               />
             )
           )}
