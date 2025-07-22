@@ -1,9 +1,9 @@
 import React from "react";
 import footerBg from "../assets/empneobg2.png"; // Adjust path as needed
 import logos from "../assets/footer.png";
-import icon1 from "../assets/Links/Insta.png";
-import icon2 from "../assets/Links/Linkedin.png";
-import icon3 from "../assets/Links/X.png";
+import icon1 from "src/assets/Links/Insta.png";
+import icon2 from "src/assets/Links/LInkedin.png";
+import icon3 from "src/assets/Links/X.png";
 
 function Footer() {
   return (
