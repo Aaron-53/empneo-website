@@ -85,7 +85,7 @@ function Footer() {
         <img
           src="/assets/footer.png"
           alt="Empneo Logo"
-          className="w-[60%] sm:w-[70%] md:w-[80%] lg:w-[80%] h-auto z-10 hover:scale-110 transition-transform duration-300 object-contain max-w-[200px] md:max-w-none"
+          className="w-[80%] sm:w-[70%] md:w-[80%] lg:w-[80%] h-auto z-10 hover:scale-110 transition-transform duration-300 object-contain max-w-[300px] sm:max-w-[250px] md:max-w-none"
         />
       </div>
     </div>

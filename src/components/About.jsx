@@ -46,15 +46,37 @@ export default function EmpneoAcceptanceLetter({
             <p className="text-lg sm:text-xl md:text-2xl font-medium mb-2">
               Model Engineering Castle
             </p>
-            <p className="text-2xl sm:text-2xl md:text-4xl font-medium mb-4 ">
+            <p className="text-2xl sm:text-2xl md:text-4xl font-medium mb-4">
               Dear Witch/Wizard,
             </p>
+
             <p className="text-xl sm:text-2xl md:text-4xl font-medium mb-4">
-              We are pleased to inform you that you have been accepted to attend{" "}
-              <strong>Empneo 9.0</strong>, the annual wizarding tech conclave
-              hosted by <strong>IEEE MEC SB</strong>. Taking place on
-              <strong> August 9 & 10</strong>, happening within the ancient
-              halls of MEC.
+              <strong>EMPNEO 9.0</strong> is where tech meets thrill.
+            </p>
+
+            <p className="text-xl sm:text-2xl md:text-4xl font-medium mb-4">
+              Organized by the{" "}
+              <strong>IEEE Student Branch of Model Engineering College</strong>{" "}
+              in collaboration with{" "}
+              <strong>IEEE Women in Engineering (WIE)</strong>, EMPNEO 9.0 is a
+              two-day science and technology camp for students in grades 8 to
+              12.
+            </p>
+
+            <p className="text-xl sm:text-2xl md:text-4xl font-medium mb-4">
+              Through hands-on workshops, interactive sessions, and engaging
+              activities, the camp invites young minds to explore the exciting
+              world of STEM.
+            </p>
+
+            <p className="text-xl sm:text-2xl md:text-4xl font-medium mb-4">
+              With a comfortable venue, delicious food, and an inspiring
+              atmosphere, EMPNEO 9.0 is the perfect launchpad for future
+              innovators.
+            </p>
+
+            <p className="text-xl sm:text-2xl md:text-4xl font-medium mb-4">
+              Curious minds—this is your space to shine. Let the journey begin!
             </p>
 
             <p className="text-xl sm:text-2xl md:text-4xl font-medium mb-4">
@@ -68,10 +90,6 @@ export default function EmpneoAcceptanceLetter({
               >
                 REGISTER HERE
               </a>
-            </p>
-
-            <p className="text-2xl sm:text-2xl md:text-4xl font-medium mb-4">
-              Wands at the ready. The prophecy is about to unfold.
             </p>
 
             <div className="mt-6 sm:mt-8">

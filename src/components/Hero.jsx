@@ -8,7 +8,7 @@ import ieee from "../assets/ieeelogos.png";
 function Hero() {
   return (
     <div
-      className="w-[100vw] min-h-[100vh] flex items-center justify-center pt-16 sm:pt-20 md:pt-10 px-4 sm:px-6 md:px-8"
+      className="w-[100vw] min-h-[100vh] pt-[-0px] flex items-center justify-center sm:pt-20 md:pt-10 px-4 sm:px-6 md:px-8"
       id="hero-section"
       style={{
         backgroundImage: `url(${Herobg})`,
@@ -17,7 +17,7 @@ function Hero() {
       }}
     >
       <SideNavbar />
-      <div className="flex flex-col items-center text-center space-y-6 sm:space-y-6 md:space-y-8 w-full max-w-4xl">
+      <div className="flex flex-col items-center text-center space-y-14 sm:space-y-6 md:space-y-8 w-full max-w-4xl">
         <div className="flex items-center justify-center">
           <img
             src={ieee}

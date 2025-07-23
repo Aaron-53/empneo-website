@@ -42,7 +42,7 @@ function SideNavbar() {
   }, []);
 
   return (
-    <div className="fixed left-4 top-1/2 -translate-y-1/2 flex flex-col z-50 justify-around h-1/2">
+    <div className="fixed left-4 top-1/2 transition-all duration-1000 -translate-y-1/2 flex flex-col z-50 justify-around h-1/2">
       {sections.map(({ id, label }) => (
         <div key={id} className="relative group flex items-center">
           <button
