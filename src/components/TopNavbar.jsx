@@ -127,12 +127,19 @@ function TopNavbar() {
               >
                 CONTACT
               </div>
-              <div
-                onClick={() => handleMenuItemClick("register")}
-                className="cursor-pointer transition-all duration-300 border-2 border-[#D49C3E] px-8 py-4 rounded-xl hover:bg-[#D49C3E] hover:text-black hover:scale-110 transform text-2xl sm:text-3xl mt-8"
-              >
-                REGISTER NOW
-              </div>
+              <a 
+  href="https://bit.ly/EMPNEO9" 
+  target="_blank" 
+  rel="noopener noreferrer"
+>
+  <div
+    onClick={() => handleMenuItemClick("register")}
+    className="cursor-pointer transition-all duration-300 border-2 border-[#D49C3E] px-8 py-4 rounded-xl hover:bg-[#D49C3E] hover:text-black hover:scale-110 transform text-2xl sm:text-3xl mt-8"
+  >
+    REGISTER NOW
+  </div>
+</a>
+
             </div>
           </div>
         )}
