@@ -6,7 +6,6 @@ import img3 from "../assets/Gallery/3.png";
 import img4 from "../assets/Gallery/4.png";
 import img5 from "../assets/Gallery/5.png";
 import img6 from "../assets/Gallery/6.png";
-
 const topRow = [img1, img2, img3];
 const bottomRow = [img4, img5, img6];
 
