@@ -98,7 +98,7 @@ function Hero() {
           className="w-80 sm:w-80 md:w-96 lg:w-[400px] xl:w-[450px] h-auto z-10 max-w-[90vw]"
         />
         <a
-          href="https://bit.ly/EMPNEO9"
+          href="https://forms.gle/FgNTJ1wMUZQUGR3j6"
           target="_blank"
           rel="noopener noreferrer"
           className="font-[MyFont] mt-4 sm:mt-4 px-6 sm:px-6 md:px-8 py-3 sm:py-3 border-2 border-[#D49C3E] text-[#D49C3E] text-lg sm:text-lg md:text-xl rounded-md hover:bg-[#D49C3E] hover:text-white transition-all duration-300 w-auto min-w-[160px] sm:min-w-[160px] text-center inline-block"
