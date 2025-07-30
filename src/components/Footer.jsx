@@ -9,7 +9,7 @@ function Footer() {
     >
       {/* Email Section */}
       <div className="text-center md:text-left flex-1">
-        <h2 className="text-lg sm:text-xl font-semibold mb-2">EMAIL?</h2>
+        <h2 className="text-lg sm:text-xl font-semibold mb-2">EMAIL</h2>
         <h3 className="text-sm sm:text-base mb-4">
           <a
             href="mailto:wie.ieeemec@gmail.com"
@@ -18,7 +18,7 @@ function Footer() {
             wie.ieeemec@gmail.com
           </a>
         </h3>
-        <h2 className="text-lg sm:text-xl font-semibold mb-2">CONTACTS?</h2>
+        <h2 className="text-lg sm:text-xl font-semibold mb-2">CONTACTS</h2>
         <h3 className="text-base sm:text-lg lg:text-xl">
           afia - +91 8129098082
         </h3>
@@ -29,7 +29,7 @@ function Footer() {
 
       {/* Links Section */}
       <div className="space-y-2 text-center md:text-left flex-1 md:flex-initial">
-        <h2 className="text-lg sm:text-xl font-semibold mb-2">LINK?</h2>
+        <h2 className="text-lg sm:text-xl font-semibold mb-2">FOLLOW US ON</h2>
 
         <h3 className="flex items-center justify-center md:justify-start gap-2">
           <img
